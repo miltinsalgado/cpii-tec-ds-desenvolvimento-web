@@ -1,0 +1,10 @@
+Nome: Milton Salgado Leandro
+Turma: IN110 N°23 
+Pokémon Correspondente e Número na Pokedex: Ekans-023
+Professora: Bianca
+Nome do Arquivo do trabalho: "ekans.rar"
+Arquivo HTML: "ekans.html"
+Arquivo CSS: "ekans.css"
+Fontes do Google utilizadas: 'Roboto Mono' e 'Roboto'
+ARQUIVOS HTML E CSS, IMAGENS E GIFS NA PASTA ZIPADA: "ekans.rar"
+ARQUIVOS DE MÚSICA NA PASTA ZIPADA: "ekansmusics.rar"

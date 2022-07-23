@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="Custom.css">
+    <title>Java Script</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Questão 1 do dia 22/10/2019: Calculando idade</h1>
+    <p id><strong>Alterando fontes e cores no CSS</strong></p>
+
+    <form>
+        <label>
+            Data de Nascimento:<input type="date" name="datanasc">
+        </label>
+        <input type="button" value="Enviar" onclick="mostraData(datanasc.value)">
+    </form>
+    <p id="mostra_data"><strong></strong></p>
+    <p id="data_atual"><strong></strong></p>
+    <p id="ano_atual"><strong></strong></p>
+    <p id="mes_atual"><strong></strong></p>
+    <p id="dia_atual"><strong></strong></p>
+    <p id="mostra_idade"><strong></strong></p>
+
+    <br>
+    <h1>Questão 2 do dia 08/10/2019: "Shipname"</h1>
+    <form>
+        Shipname de <input type="text" name="n1"> com <input type="text" name="n2"><br>
+        <input type="button" value="Enviar" onclick="ship(n1.value,n2.value)">
+    </form>
+
+    <p id="shipname"><strong></strong></p>
+    <script>
+        function mostraData(data) {
+            document.getElementById("mostra_data").innerHTML = data;
+            var birthday = data.split("-");
+            var ano = birthday[0];
+            var mes = birthday[1];
+            var dia = birthday[2];
+            ano = parseInt(ano);
+            mes = parseInt(mes);
+            dia = parseInt(dia);
+            dataAtual = new Date();
+            document.getElementById("data_atual").innerHTML = "Data Atual: " + dataAtual;
+            anoAtual = dataAtual.getYear() + 1900;
+            document.getElementById("ano_atual").innerHTML = "Ano Atual: " + anoAtual;
+            mesAtual = dataAtual.getMonth() + 1;
+            document.getElementById("mes_atual").innerHTML = "Mês Atual: " + mesAtual;
+            diaAtual = dataAtual.getDate();
+            diaSemana = dataAtual.getDay() + 1;
+            document.getElementById("dia_atual").innerHTML = "Dia no mês: " + diaAtual + " Dia na semana: " + diaSemana;
+            var idade = anoAtual - ano;
+            if (mesAtual > mes) {
+                idade = idade;
+            }
+            else if (dia <= diaAtual) {
+                idade = idade;
+            }
+            else {
+                idade = idade - 1;
+            }
+            document.getElementById("mostra_idade").innerHTML = "Idade: " + idade + " Anos";
+        }
+        function ship(nome1, nome2) {
+            metade1 = nome1.substring(0, 3);
+            metade2 = nome2.substring(nome2.length, nome2.length - 3);
+            document.getElementById("shipname").innerHTML = "#Shipname " + metade1 + metade2;
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="Custom.css">
+    <title>Java Script</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Questão 1 do dia 08/10/2019: Entrada de dados com formulário</h1>
+    <p id><strong>Alterando fontes e cores no CSS</strong></p>
+
+    <form>
+        <label>
+            Nome: <input type="text" name="texto">
+        </label>
+        <input type="button" value="Enviar" onclick="imprimenome(texto.value)">
+    </form>
+    <p id="mostranome"><strong></strong></p>
+    <br>
+    <h1>Questão 2 do dia 08/10/2019: Manipulação de funções nativas do JavaScript</h1>
+    <form>
+        Sorteie um número entre <input type="number" name="fmin"> e <input type="number" name=fmax>
+        <input type="button" value="Sortear" onclick="sorteio(fmin.value, fmax.value)">
+    </form>
+
+    <p id="sorteio"></p>
+    <script>
+        function imprimenome(nome) {
+            document.getElementById("mostranome").innerHTML = "Seu nome em minúsculo é " + nome.toLowerCase() + ", ao contrário fica " + invertenome(nome.toLowerCase()) + " e tem " + nome.length + " letras";
+        }
+        function invertenome(nome) {
+            var invertida = "";
+            for (i = nome.length - 1; i >= 0; i--) {
+                invertida = invertida + nome.charAt(i);
+            }
+            return invertida;
+        }
+
+        function sorteio(min, max) {
+            min = parseInt(min);
+            max = parseInt(max);
+            sorteio = Math.round(max * Math.random());
+            if (sorteio < min) {
+                document.getElementById("sorteio").innerHTML = "O número sorteado foi: " + min;
+                return;
+            }
+            else {
+                document.getElementById("sorteio").innerHTML = "O número sorteado foi: " + sorteio;
+                return;
+            }
+        }
+    </script>
+</body>
+
+</html>

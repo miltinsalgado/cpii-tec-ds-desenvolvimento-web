@@ -1,0 +1,166 @@
+﻿/*
+Esqueleto do Zen Garden ICC. Preencha o cabe?lho com suas informa?es
+Altera?es feitas por: Milton Salgado Leandro-N?23
+Turma:IN110
+Data:26/08/2019
+
+
+Ao terminar, zipe este arquivo e quaisquer imagem ou webfont citada nele e envie pelo formul?io que consta no enunciado.
+N? enviar o HTML junto.
+*/
+body
+{
+    background-image: url('in110_23/zengarden.jpg');
+    background-repeat: repeat;
+}
+#principal
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    background-image: url('in110_23/garden.jpg');
+    border: 5px solid black;
+    margin-bottom: 5px;
+    color: skyblue;
+}
+.texto
+{
+    font-weight: bold;
+}
+#t4, #t5, #t6, #t7
+{
+    padding: 3%;
+}
+#t4
+{
+    color: blue;
+}
+#t7
+{
+    color: purple;
+}
+#t9
+{
+    color: yellow;
+}
+#container
+{
+    margin: 0 auto;
+    text-align: center;
+}
+.foto
+{
+    width: 575px;
+    border-style: dashed;
+}
+#conteudo
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: medium;
+    float: left;
+    margin: 0 auto;
+    width: 723px;
+    height: 1775px;
+    border: 2px solid black;
+    background-color: rgba(24, 236, 38, 0.73);  
+}
+#conteudo2
+{
+    font-family: 'Roboto Mono', monospace;
+    font-size: small;
+    float: right;
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 723px;
+    color: white;
+    background-color: rgba(70, 87, 241, 0.73);
+}
+#conteudo3
+{
+    font-family: 'Roboto Mono', monospace;
+    font-size: small;
+    float: right;
+    width: 723px;
+    background-color: rgba(128, 133, 0, 0.73);
+    border: 2px solid black;
+    margin-top: 5px;
+}
+#creditos
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    color: white;
+    float: left;
+    background-image: url('in110_23/garden2.jpg');
+    height: 175px;
+    border: 2px solid black;    
+    margin-left: 250px;
+    margin-top: 5px;
+}
+#tabeladiv
+{
+    font-family: 'Roboto Mono', monospace;
+    font-size: small;
+    float: right;
+    width: 723px;
+    height: 300px;
+    background-color: rgba(255, 0, 0, 0.3);
+    border: 2px solid black;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;     
+}
+table
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 723px;
+    height: 200px;
+}
+table td 
+{
+    padding: 2px;
+    border: 2px solid black;
+    background: green;
+}
+table th
+{
+    border: 2px solid black;
+    background: red;
+}
+ul
+{
+   width: 70%; 
+   margin-left: 100px;
+   font-family: 'Consolas', sans-serif;
+   font-weight: bold;
+   align-content: center;
+   color: white;
+   background: green;
+   border: 2px solid black;
+   list-style-image: url("in110_23/flower.png");
+}
+#ol1
+{
+   width: 70%; 
+   margin-left: 100px;
+   font-family: 'Consolas', sans-serif;
+   font-weight: bold;
+   align-content: center;
+   color: white;
+   background: red;
+   border: 2px solid black;
+   list-style-image: url("in110_23/yin_yiang.png");
+}
+#ol2
+{
+    background: blue;
+    border: 2px solid black;
+}
+#ul2
+{
+    list-style-image: url("in110_23/yin_yiang.png");
+    background: orange;
+}

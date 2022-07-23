@@ -1,0 +1,41 @@
+/*comentário em CSS*/
+body{ /*seletor: as mudanças daqui afetam o body*/
+	/*background-color: #D2B48C;
+	background-color: rgb(210, 180, 140);/*
+	/*#000000
+	#FF 		 FF 	 FF
+	vermelho	verde	azul
+	255			255		255*/
+	font-family: 'Arial', Sans-serif;
+	background-image: url("imagens/galaxy.jpeg");
+	color: white;
+}
+
+p{
+	font-size: 18pt;
+/*	color: #000000;*/
+	}
+
+h1{
+	color: #FF3399;
+	font-size: 3em;
+}
+
+img{
+	width: 300px; /*largura da imagem*/
+	height: 300px; /*altura da imagem*/
+	display: none;
+}
+
+.centro{
+	margin: 0 auto;
+	width: 400px;
+}
+
+.container{
+	padding: 10px;
+	margin: 0 auto;
+	width: 70%;
+	background-color: rgba(0,0,0,.4);
+	
+}

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jogo: Componentes do Computador</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("iccjs_tema23/Imagem2.jpg");
+            margin-top: 3%;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Press Start 2P', cursive;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        p,
+        form {
+            font-family: 'Audiowide', cursive;
+            color: aliceblue;
+            margin-left: 5%;
+            font-size: 25px;
+        }
+
+        #resultado {
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 3%;
+        }
+
+        #CPII {
+            margin-left: 32.5%;
+            width: 35%;
+            height: 20%;
+        }
+
+        #AUTORIA {
+            font-size: 15px;
+            text-align: center;
+            margin-left: 0%;
+        }
+
+        input[type=text] {
+            border-color: rgb(18, 18, 27);
+            font-family: 'Audiowide', cursive;
+            font-size: large;
+            border-width: thin;
+            border-radius: 10px;
+        }
+
+        input[type=button] {
+            background-color: green;
+            border-style: solid;
+            border-color: aliceblue;
+            font-family: 'Audiowide', cursive;
+            font-size: large;
+            border-width: thin;
+            border-radius: 10px;
+            padding: 1%;
+            margin-left: 42.5%;
+        }
+
+        input[type=reset] {
+            background-color: red;
+            border-style: solid;
+            border-color: aliceblue;
+            font-family: 'Audiowide', cursive;
+            font-size: large;
+            border-width: thin;
+            border-radius: 10px;
+            padding: 1%;
+            margin-left: 38.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CENTRAL CPII</h1>
+    <h1>COMPONENTES DO COMPUTADOR</h1>
+    <h2>JOGO-QUESTIONÁRIO</h2>
+    <img id="CPII" alt="cp2" src="iccjs_tema23/Imagem3.jpg">
+    <br>
+    <br>
+    <form method="GET">
+        Questão 1: Mouse é um dispositivo de saída ou de entrada? <br>Resposta:<label> <input type="text"
+                name="pergunta1" /></label><br><br>
+        Questão 2: Como é chamada a parte física de um computador? <br>Resposta:<label> <input type="text"
+                name="pergunta2" /></label><br><br>
+        Questão 3: Memória RAM é uma memória primária ou secundária? <br>Resposta:<label> <input type="text"
+                name="pergunta3" /></label><br><br>
+        Questão 4: Onde estão localizados os componentes que fazem com que todas as partes do computador cumpram suas
+        funções? <br>Resposta:<label> <input type="text" name="pergunta4" /></label><br><br>
+        Questão 5: Qual o nome do cérebro do computador? <br>Resposta: <label> <input type="text"
+                name="pergunta5" /></label><br><br>
+        Questão 6: "A espinha dorsal do computador, que interliga todos os seus componentes". A qual componente do
+        computador a frase interior se refere? <br>Resposta: <label><input type="text" name="pergunta6" /></label><br>
+        <br><input type="button" value="Enviar"
+            onclick="respostas(pergunta1.value, pergunta2.value, pergunta3.value, pergunta4.value, pergunta5.value, pergunta6.value)"><br>
+        <br><input type="reset" value="Apagar Respostas">
+        <br>
+    </form>
+    <p id="resultado"></p>
+    <p id="AUTORIA">Jogo Feito por ©João Paulo e Milton Salgado-Turma: IN-110</p>
+    <script>
+        var total = 0;
+        function respostas(r1, r2, r3, r4, r5, r6) {
+            if (r1.toUpperCase() == "ENTRADA") {
+                total++;
+            }
+
+            if (r2.toUpperCase() == "HARDWARE") {
+                total++;
+            }
+
+            if (r3.toUpperCase() == "PRIMARIA" || r3.toUpperCase() == "PRIMÁRIA") {
+                total++;
+            }
+
+            if (r4.toUpperCase() == "GABINETE") {
+                total++; s
+            }
+
+            if (r5.toUpperCase() == "PROCESSADOR") {
+                total++;
+            }
+
+            if (r6.toUpperCase() == "PLACA-MÃE" || r6.toUpperCase() == "PLACA MÃE" || r6.toUpperCase() == "PLACA MAE" || r6.toUpperCase() == "PLACA-MAE") {
+                total++;
+            }
+
+            if ((total <= 2)) {
+                document.getElementById("resultado").innerHTML = "Você sabe pouco sobre o assunto! Você efetuou " + total + " pontos de 6";
+                document.getElementById("resultado").style.color = "red";
+                total = 0;
+            }
+
+            else if ((total > 2) && (total <= 3)) {
+                document.getElementById("resultado").innerHTML = "Você sabe o básico sobre o assunto! Você efetuou " + total + " pontos de 6";
+                document.getElementById("resultado").style.color = "yellow";
+                total = 0;
+            }
+
+            else if ((total > 3) && (total <= 5)) {
+                document.getElementById("resultado").innerHTML = "Você sabe muito sobre o assunto! Você efetuou " + total + " pontos de 6";
+                document.getElementById("resultado").style.color = "yellowgreen";
+                total = 0;
+            }
+
+            else if (total == 6) {
+                document.getElementById("resultado").innerHTML = "Você sabe tudo sobre o assunto! Você efetuou " + total + " pontos de 6";
+                document.getElementById("resultado").style.color = "skyblue";
+                total = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>

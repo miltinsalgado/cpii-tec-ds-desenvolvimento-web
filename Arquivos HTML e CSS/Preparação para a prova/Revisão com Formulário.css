@@ -1,0 +1,164 @@
+
+body
+{
+    background-image: url('Universo_1.jpg');
+    background-repeat: no-repeat;
+    font-family: "Oswald", sans-serif;
+}
+h1
+{
+	color: white;
+}
+.parágrafos
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: large;
+	background-color: rgba( 255, 255, 255, 0.2);
+}
+#título
+{
+	margin-left: 33%;
+}
+.galeria hover img
+{
+	border-style: dashed;
+	-webkit-transform: scale(1.1);
+ 	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+#Formulário
+{
+	border: solid;
+	width: 50%;
+	background: url("Floresta.jpg");
+	background-size: 100%;
+}
+ul
+{
+	margin-left: 32.5%;
+    list-style-image: url("yin_yiang.png");
+    font-family: 'Consolas', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: skyblue;
+    border: 3px solid black;
+    width: 30%;
+}
+ol
+{ 
+	margin-left: 32.5%;
+	list-style-image: url("flower.png");
+	font-family: 'Consolas', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: 2px solid black;
+    width: 30%;
+}
+form
+{
+	color: white;
+	font-weight: bold;
+}
+fieldset
+{
+	background: url("zengarden.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+label
+{
+	background-color: rgba( 0, 0, 0, 0.7);
+}
+legend
+{
+	background-color: rgba( 255, 255, 255, 0.2);
+	font-size: large;
+}
+input[type=text]
+{
+	border: 1px solid #000000;
+    background:#cccccc;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+input[type=text]
+{
+	border: 1px solid #000000;
+    background:purple;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+input[type=number]
+{
+	border: 1px solid #000000;
+    background:green;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+input[type=date]
+{
+	border: 1px solid #000000;
+    background:blue;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+input[type=password]
+{
+	border: 1px solid #000000;
+    background:red;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+input[type=submit]
+{
+	background:#006699;
+	color:#ffffff;
+}
+select
+{
+	border: 1px solid #000000;
+    background:skyblue;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+textarea
+{
+    border: 1px solid #000000;
+    background:orange;
+    width:150px;
+    height:100px;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}

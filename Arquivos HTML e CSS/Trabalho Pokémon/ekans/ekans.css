@@ -1,0 +1,101 @@
+/*Milton Salgado Leandro Turma:IN110 N�:23 Pok�mon:Ekans (023) Professora: Bianca*/
+/*Recomendo abrir esse arquivo no navegador "Google Chrome" para uma melhor resolu��o*/
+
+body
+{
+    background-image: url('ekans23mov.gif');
+    background-size: 20em;
+}
+#music 
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: x-large;
+    text-align: center;
+    text-shadow: 0.05em 0.05em black;
+    color: white;
+    border-style: groove;
+    background-image: url('pokedexkanto.jpeg');
+    height: 300px;
+}
+.transp
+{
+    background-color: rgba(255,255,255, 0.2);
+}
+h1
+{   
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    text-shadow: 0.05em 0.05em black;
+    color: purple;
+}
+.png
+{
+    border-style: solid;
+    border-width: 5px;
+}
+h2
+{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    text-shadow: 0.05em 0.05em black;
+    color: blue;
+}
+#div1
+{
+        float:left;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        width: 750px;
+        font-family: 'Roboto Mono', monospace;
+	    color: black;
+        border-style: solid;
+}
+#p1
+{
+        font-size:x-large;
+        text-align: center;
+}
+.png1
+{
+        border-style:  dashed;
+        border-width: 2.5px;
+}
+#div2
+{
+        float:right;
+        background-color: rgba(150, 0, 150, 0.4);
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        width: 600px;
+        font-family: 'Roboto Mono', monospace;
+	    text-align: center;
+	    color: black;
+        border-style: solid;
+}
+.p1
+{
+        font-size:x-large;
+        text-align: center;
+}
+table
+{
+    border-collapse: collapse; /* CSS2 */
+    background: #960096;
+}
+table td 
+{
+    border: 5px solid black;
+}
+ 
+table th 
+{
+    border: 5px solid black;
+    background: red;
+}
+
